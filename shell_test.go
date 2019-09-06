@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/cheekybits/is"
-	"github.com/ipfs/go-ipfs-api/options"
+	"github.com/rudolph9/go-ipfs-api/options"
 )
 
 const (

@@ -118,6 +118,7 @@ func (r *Request) Send(c *http.Client) (*Response, error) {
 	req = req.WithContext(r.Ctx)
 
 	// Add any headers that were supplied via the RequestBuilder.
+	req.Header.Add("js.fetch:mode", "no-cors")
 	for k, v := range r.Headers {
 		req.Header.Add(k, v)
 	}
